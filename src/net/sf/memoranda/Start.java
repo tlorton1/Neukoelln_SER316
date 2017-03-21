@@ -23,7 +23,7 @@ public class Start {
     static App app = null;
     
     static int DEFAULT_PORT = 19432;
-    static boolean checkIfAlreadyStartet = true;
+    static boolean checkIfAlreadyStarted = true;
     
     static {
         String port = Configuration.get("PORT_NUMBER").toString().trim();
@@ -39,12 +39,12 @@ public class Start {
         
         String check = Configuration.get("CHECK_IF_ALREADY_STARTED").toString().trim();
         if (check.length() > 0 && check.equalsIgnoreCase("no")) {
-            checkIfAlreadyStartet = false;
+            checkIfAlreadyStarted = false;
         }
     }
     
     public static void main(String[] args) {
-        if (checkIfAlreadyStartet) {
+        if (checkIfAlreadyStarted) {
             try {
                 // Try to open a socket. If socket opened successfully (app is already started), take no action and exit.
                 Socket socket = new Socket("127.0.0.1", DEFAULT_PORT);
