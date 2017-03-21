@@ -23,3 +23,6 @@ Enjoy!
 
 
 Dr. Mehlhase
+________________________________________________________________________________________________________________________________________
+
+Ty Lorton's small change to README to ensure I can push changes back to GitHub.
